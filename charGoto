@@ -1,0 +1,42 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+
+
+int main() {
+    Fillimi:
+
+    char a;
+    cout << "Shtyp nje karakter: ";
+    cin >> a;
+
+    switch (a) {
+        case 'a':
+        case 'e':
+        case 'o':
+        case '/x89':
+        case 'u':
+        case 'i':
+        case 'y':
+            cout << " =====Zanore===== ";
+            break;
+        default:
+            cout << " =====Bashketingellore===== ";
+            break;
+    }
+    cout << endl;
+
+    char rikthe;
+    cout << "Shtyp (F) per kthim ne fillim , (P) - per perfundim te programit : "
+         <<endl;
+    cin >>rikthe;
+
+    if (rikthe == 'F')
+        goto Fillimi;
+    else
+        cout << "Programi perfundoj me sukses .";
+
+
+    return 0;
+}
