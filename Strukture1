@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+
+struct pacienti {
+    string emri;
+    string mbiemri;
+    int mosha;
+    int terminet[4];
+};
+
+void terminiPare(pacienti p){
+
+    int t = p.terminet[0];
+    for (int i = 0; i < 4; i++) {
+        if (t > p.terminet[i])
+            t = p.terminet[i];
+    }
+    cout <<"Termini i pare: "<<t<<endl;
+}
+
+
+int main() {
+    pacienti p1 = {"Enrik","Ademi",18,{3,5,7,1}};
+
+    terminiPare(p1);
+}
