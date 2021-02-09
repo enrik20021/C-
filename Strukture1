@@ -22,7 +22,7 @@ void terminiPare(pacienti p){
 
 
 int main() {
-    pacienti p1 = {"Enrik","Ademi",18,{3,5,7,1}};
+    pacienti p1 = {"Pacientii","semure",18,{3,5,7,1}};
 
     terminiPare(p1);
 }
